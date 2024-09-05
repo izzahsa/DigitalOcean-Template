@@ -154,12 +154,13 @@ h5 {
 }
 .utama {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
     font-family: sans-serif;
 }
 h1 {
     font-size: 48px;
     color: #ffffff;
+    margin: -400px 0px 0px 0px;
 }
 h4 {
     font-size: 20px;
@@ -290,13 +291,16 @@ h2 {
 }
 
 /* laptop */
-@media (min-width: 1000px) and (max-width: 1249px) {
+@media (min-width: 1000px) and (max-width: 1500px) {
     .button-mobile-menu {
         display: none;
     }   
     .video {
         text-align: center;
         display: none;
+    }
+    .utama {
+        margin-bottom: -500px;
     }
 }
 /* Extra Tablet */
@@ -344,8 +348,11 @@ h2 {
         top: 65px;
         right: 90px;
     }
+    /* .utama {
+        margin-top: 150px;
+    } */
     .utama ul li {
-        margin: 10px 2px 10px 2px;
+        margin: 10px 20px 10px 2px;
         text-align: none;
     }
     .video {
@@ -385,7 +392,7 @@ h2 {
         text-align: center;
         width:400px;
         font-size: 16px;
-        background-color: aqua;
+        /* background-color: aqua; */
     }
     .github {
         position: relative;
@@ -406,6 +413,9 @@ h2 {
         height: 50px;
         display: none;
     }
+    /* .utama {
+        margin-top: 150px;
+    } */
 }
 /* Smartphone */
 @media (max-width: 449px) {
