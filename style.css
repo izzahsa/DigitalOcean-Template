@@ -3,8 +3,6 @@ body {
     padding: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.container {
-}
 .topbar {
     background-color: #1433d6;
     color: #ffffff;
@@ -106,8 +104,6 @@ h5 {
     color: black;
     border-radius: 100px;
 }
-.grid-itemb {
-}
 .brand-logo {
     display: flex;
     align-items: center;
@@ -149,7 +145,7 @@ h5 {
     width: auto;
 }
 .topthree {
-    background-color: #0069ff;
+    background-image: url(https://www.digitalocean.com/_next/static/media/hero-background.769bb51c.svg);
     width: auto;
     height: 900px;
     display: flex;
@@ -158,7 +154,7 @@ h5 {
 }
 .utama {
     text-align: center;
-    margin-bottom: 400px;
+    margin-top: 200px;
     font-family: sans-serif;
 }
 h1 {
@@ -194,6 +190,13 @@ h4 {
 .utama ul li a:hover {
     background-color: #1433d6;
     color: #ffffff;
+}
+.video {
+    margin-top: 100px;
+    border-radius: 100;
+    padding: 200px 400px;
+    text-align: center;
+    justify-content: center;
 }
 .topfo {
     text-align: left;
@@ -291,9 +294,13 @@ h2 {
     .button-mobile-menu {
         display: none;
     }   
+    .video {
+        text-align: center;
+        display: none;
+    }
 }
 /* Extra Tablet */
-@media (min-width: 700px) and (max-width: 1180px) {
+@media (min-width: 780px) and (max-width: 1180px) {
     .grid-itema {
         display: none;
     }
@@ -337,9 +344,20 @@ h2 {
         top: 65px;
         right: 90px;
     }
+    .utama ul li {
+        margin: 10px 2px 10px 2px;
+        text-align: none;
+    }
+    .video {
+        width: 500px;
+        height: 250px;
+        text-align: center;
+        justify-content: center;
+        display: none;
+    }
 }
 /* Tablet */
-@media (min-width: 450px) and (max-width: 700px) {
+@media (min-width: 450px) and (max-width: 780px) {
     .topbar {
         display: none;
     }
@@ -357,19 +375,36 @@ h2 {
         display: none;
     }
     .topweb {
+
         display: none;
     }
     .utama ul li{
-        margin: 10px 5px;
+        margin: 7px;
+        /* margin-left: -50px; */
+        justify-content: center;
         text-align: center;
-        width: 500px;
+        width:400px;
         font-size: 16px;
+        background-color: aqua;
+    }
+    .github {
+        position: relative;
+        left: -10px;
     }
     .utama h1 {
-        font-size: 20px;
+        font-size: 30px;
+    }
+    .utama h4 {
+        font-size: 18px;
     }
     .topthree {
-        background-color: #1235d7;
+        /* background: linear-gradient(1237d9,0B49E7); */
+        background: linear-gradient(to bottom, #0D44E3, #314cc8);
+    }
+    .video {
+        width: 5px;
+        height: 50px;
+        display: none;
     }
 }
 /* Smartphone */
@@ -388,6 +423,35 @@ h2 {
         display: none;
     }
     .topweb {
+        display: none;
+    }
+    .utama ul li{
+        margin: 4px;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        font-size: 16px;
+        /* background-color: aqua; */
+    }
+    .github{
+        position: relative;
+        left: -10PX;
+    }
+    .utama h1 {
+        font-size: 30px;
+        position: relative;
+        left: -10PX;
+    }
+    .utama h4 {
+        font-size: 15px;
+        position: relative;
+        left: 10px;
+    }
+    .topthree {
+        /* background: linear-gradient(1237d9,0B49E7); */
+        background: linear-gradient(to bottom, #0D44E3, #314cc8);
+    }
+    .video {
         display: none;
     }
 }
